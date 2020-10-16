@@ -1,0 +1,51 @@
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 350px;
+    bottom: 0;
+    font-family: "Montserrat";
+    flex-direction: column;
+}
+.intro-name{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    opacity: 0;
+    animation: displayIntro .5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+.intro-title{
+    opacity: 0;
+    animation: displayIntro .5s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+    margin: 0px 0px 0px 40px;
+}
+.about-button{
+    margin-top: 20px;
+    opacity: 0;
+    animation: displayIntro .5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    display: block;
+    padding: 8px 50px;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.2em;
+    border: 0;
+    background-color: #142252;
+    border-radius: 5px;
+}
+@keyframes displayIntro{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
